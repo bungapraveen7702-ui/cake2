@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('ESLint') {
+        stage('lint') {
             steps {
                 sh 'npx eslint src'
             }

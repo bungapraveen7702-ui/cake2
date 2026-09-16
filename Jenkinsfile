@@ -15,4 +15,10 @@ pipeline {
             }
         }
     }
+    stage('ESLint'){
+        steps{
+            sh 'npm run lint'
+        }
+    }
 }
+   

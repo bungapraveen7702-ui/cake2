@@ -15,10 +15,11 @@ pipeline {
             }
         }
 
-        stage('Lint') {
+        stage('ESLint') {
             steps {
-                sh 'npm run lint'
+                sh 'npx eslint . --ext .js,.jsx'
             }
         }
     }
 }
+

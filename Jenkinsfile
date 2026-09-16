@@ -14,11 +14,11 @@ pipeline {
                 sh 'npm install'
             }
         }
-    }
-    stage('ESLint'){
-        steps{
-            sh 'npm run lint'
+
+        stage('ESLint') {
+            steps {
+                sh 'npm run lint'
+            }
         }
     }
 }
-   
